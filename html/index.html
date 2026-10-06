@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagon Options</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menuWrapper" class="menu-wrapper">
+        <div class="clipboard-container">
+            <button id="closeBtn" class="close-tab">X</button>
+            <div class="paper-area">
+                <div class="header-section">
+                    <img src="img/wagon.png" alt="Wagon" class="wagon-header-img">
+                </div>
+                <div class="stamped-header" id="wagonTitle">Wagon Options</div>
+                <div class="wagon-subtitle" id="wagonSubtitle">Customize your wagon</div>
+
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="parts">
+                        <img src="img/parts.png" alt="Parts" class="tab-icon"> Parts
+                    </button>
+                    <button class="tab-btn" data-tab="livery">
+                        <img src="img/paint.png" alt="Paint" class="tab-icon"> Paint
+                    </button>
+                    <button class="tab-btn" data-tab="cargo">
+                        <img src="img/cargo.png" alt="Cargo" class="tab-icon"> Cargo
+                    </button>
+                    <button class="tab-btn" data-tab="lights">
+                        <img src="img/lights.png" alt="Lights" class="tab-icon"> Lights
+                    </button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-parts">
+                        <div id="extrasList"></div>
+                    </div>
+
+                    <div class="tab-pane" id="tab-livery">
+                        <div id="liveryList" class="livery-list"></div>
+                    </div>
+
+                    <div class="tab-pane" id="tab-cargo">
+                        <div id="propsetCategories" class="propset-categories"></div>
+                    </div>
+
+                    <div class="tab-pane" id="tab-lights">
+                        <div id="lanternOptions" class="lantern-options"></div>
+                    </div>
+                </div>
+
+                <div class="menu-footer">
+                    <button id="resetBtn" class="footer-btn btn-bad">
+                        Reset All
+                    </button>
+                    <button id="closeFooterBtn" class="footer-btn">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
